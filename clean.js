@@ -1,7 +1,6 @@
 function cleanObject(obj) {
     if(obj) {
         for(key in obj) {
-            // console.log("Outside",key,":" ,obj[key], typeof(obj[key]));
             if(obj[key] == null || obj[key] == ""){
                 delete obj[key];
             }
